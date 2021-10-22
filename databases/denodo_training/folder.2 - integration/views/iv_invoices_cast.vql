@@ -1,0 +1,8 @@
+﻿CREATE OR REPLACE VIEW iv_invoices_cast FOLDER = '/2 - integration' (
+    date_invoice (sourcetypeid = '93')
+)
+ AS SELECT bv_invoices_12.invoice_id AS invoice_id, cast('timestamp', bv_invoices_12.date_invoice) AS date_invoice, bv_invoices_12.order_id AS order_id, bv_invoices_12.date_placed AS date_placed, bv_invoices_12.date_delivered AS date_delivered, bv_invoices_12.date_closed AS date_closed, bv_invoices_12.first_name AS first_name, bv_invoices_12.last_name AS last_name, bv_invoices_12.email AS email, bv_invoices_12.address AS address, bv_invoices_12.country AS country, bv_invoices_12.postal_code AS postal_code, bv_invoices_12.phone AS phone, bv_invoices_12.amount AS amount FROM bv_invoices_12;
+
+ALTER VIEW iv_invoices_cast
+ LAYOUT (bv_invoices_12 = [20, 20, 200, 306]);
+

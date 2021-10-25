@@ -11,7 +11,7 @@
         column6 = 'Column6' (OPT)
     );
 
-CREATE OR REPLACE TABLE bv_conn_events_1910 I18N us_pst (
+CREATE OR REPLACE TABLE bv_conn_events_1910344 I18N us_pst (
         event_date:text,
         source_ip:text,
         device:text,

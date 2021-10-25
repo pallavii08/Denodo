@@ -13,7 +13,7 @@
         column6 = 'Column6' (OPT)
     );
 
-CREATE OR REPLACE TABLE bv_conn_events_by_date_5 I18N us_pst (
+CREATE OR REPLACE TABLE bv_conn_events_by_date_54 I18N us_pst (
         start_date:text (extern),
         end_date:text (extern),
         event_date:text,

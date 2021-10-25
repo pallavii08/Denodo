@@ -14,7 +14,7 @@
     );
 
 CREATE OR REPLACE TABLE bv_conn_events_by_date I18N us_pst (
-        start_date:text (extern),
+        start_date:intervalyearmonth,
         end_date:text (extern),
         event_date:text,
         source_ip:text,
